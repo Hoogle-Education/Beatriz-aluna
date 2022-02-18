@@ -50,10 +50,15 @@ class Shape{
         }
     }
 
+    @Override
+    public String toString() {
+        return "Shape [lado1=" + lado1 + ", lado2=" + lado2 + ", lado3=" + lado3 + ", lado4=" + lado4 + "]";
+    }
+
 }
 
 public class App2 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         
         Shape forma1 = new Shape(3.0);
         Shape forma2 = new Shape(3.0, 5.0);
@@ -62,6 +67,7 @@ public class App2 {
         System.out.println("area da forma 1: " + forma1.area());
         System.out.println("area da forma 2: " + forma2.area());
         System.out.println("area da forma 3: " + forma3.area());
-        
+        System.out.println(forma1);
+        System.out.println(forma2);
     }
 }

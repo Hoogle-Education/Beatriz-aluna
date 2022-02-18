@@ -1,3 +1,4 @@
+import entities.Pessoa;
 
 class Pessoa {
     // atributos
