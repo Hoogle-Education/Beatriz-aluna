@@ -2,7 +2,8 @@
   "java.project.sourcePaths": [
     "projects/Getters&Setters/src",
     "projects/Construtors/src",
+    "projects/ClubeDoLivro/src/entities",
     "projects/ClubeDoLivro/src/application",
-    "projects/ClubeDoLivro/src/entities"
+    "projects/enhitance/src"
   ]
 }
