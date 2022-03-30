@@ -22,8 +22,6 @@ São especificidades das classes.
     int idade;
 
     // métodos
-
-
   }
 
   public static void main(String[] args){
@@ -34,7 +32,6 @@ São especificidades das classes.
     joao.idade = 12;
 
   }
-
 ```
 
 ## 3. Métodos
