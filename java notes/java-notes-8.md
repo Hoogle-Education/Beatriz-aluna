@@ -50,6 +50,38 @@ Supondo um objeto `exception` da excessão que você está tratando, é normal q
 
 2. `exception.getMessage()`: Basicamente pega a mensagem do erro padrão, ou uma possível mensagem personalidada associada a algum erro.
 
-# Hierarquia das Excessões
+# Postergar ou produzir excessões
+
+## 1. `throw`
+
+```java
+try{
+  int a = 2; // criada e esquecida
+
+  obj.setNota(11.0);b// 
+  // interrompe o try
+  throw new IOXException("Erro na entrada"); 
+  
+  int b = 3; // nem é criada
+}catch(IOException iox){
+  System.out.println(iox.getMessage());
+}
+```
+
+
+## 2. `throws`
+
+## 3. Exemplo:
+
+Método que registra a nota de um aluno.
+
+```java
+  void setNota(double nota) throws InputMissmatchException {
+      if(nota > 10) 
+      throw new InputMissmatchException("Nota acima do esperado");
+
+      this.nota = nota;
+  }
+```
 
 # Excessões Personalizadas
